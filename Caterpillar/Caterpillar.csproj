@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1A4EC644-E4E6-4289-8E28-7F06AE800109}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Caterpillar</RootNamespace>
+    <AssemblyName>Caterpillar</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="UnitConversions\Angle\Angle.cs" />
+    <Compile Include="UnitConversions\Angle\AngleCommon.cs" />
+    <Compile Include="UnitConversions\Angle\AngleTime.cs" />
+    <Compile Include="UnitConversions\Areas\AreaAstronomical.cs" />
+    <Compile Include="UnitConversions\Areas\AreaMetric.cs" />
+    <Compile Include="UnitConversions\Areas\AreaNautical.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaCH.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaDE.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaES.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaFR.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaJP.cs" />
+    <Compile Include="UnitConversions\Areas\AreaSurvey.cs" />
+    <Compile Include="UnitConversions\Areas\AreaImperial.cs" />
+    <Compile Include="UnitConversions\Areas\AreaSI.cs" />
+    <Compile Include="UnitConversions\Areas\Area.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaRU.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaTH.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaUK.cs" />
+    <Compile Include="UnitConversions\Areas\Nations\AreaUS.cs" />
+    <Compile Include="UnitConversions\Energies\Energy.cs" />
+    <Compile Include="UnitConversions\Energies\EnergyImperial.cs" />
+    <Compile Include="UnitConversions\Energies\EnergyMetric.cs" />
+    <Compile Include="UnitConversions\Energies\EnergySI.cs" />
+    <Compile Include="UnitConversions\Forces\Force.cs" />
+    <Compile Include="UnitConversions\Forces\ForceImperial.cs" />
+    <Compile Include="UnitConversions\Forces\ForceMetric.cs" />
+    <Compile Include="UnitConversions\Forces\ForceSI.cs" />
+    <Compile Include="UnitConversions\Forces\Nations\ForceUK.cs" />
+    <Compile Include="UnitConversions\Forces\Nations\ForceUS.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthAstronomical.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthAT.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthCH.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthDE.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthEngineering.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthES.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthFR.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthSI.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthSurvey.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthTypography.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthJP.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthNautical.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthImperial.cs" />
+    <Compile Include="UnitConversions\Lengths\Length.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthNL.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthRU.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthSUI.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthTH.cs" />
+    <Compile Include="UnitConversions\Lengths\Nations\LengthUK.cs" />
+    <Compile Include="UnitConversions\Masses\Nations\MassRU.cs" />
+    <Compile Include="UnitConversions\Masses\Nations\MassES.cs" />
+    <Compile Include="UnitConversions\Masses\Nations\MassFR.cs" />
+    <Compile Include="UnitConversions\Masses\Nations\MassDE.cs" />
+    <Compile Include="UnitConversions\Masses\Nations\MassCH.cs" />
+    <Compile Include="UnitConversions\Masses\MassImperial.cs" />
+    <Compile Include="UnitConversions\Masses\Nations\MassJP.cs" />
+    <Compile Include="UnitConversions\Masses\MassMetric.cs" />
+    <Compile Include="UnitConversions\Masses\MassTroy.cs" />
+    <Compile Include="UnitConversions\Masses\MassSI.cs" />
+    <Compile Include="UnitConversions\Masses\Nations\MassUK.cs" />
+    <Compile Include="UnitConversions\Masses\Nations\MassUS.cs" />
+    <Compile Include="UnitConversions\Masses\Mass.cs" />
+    <Compile Include="UnitConversions\Pressures\PressureImperial.cs" />
+    <Compile Include="UnitConversions\Pressures\PressureCommon.cs" />
+    <Compile Include="UnitConversions\Pressures\PressureMetric.cs" />
+    <Compile Include="UnitConversions\Pressures\PressureSI.cs" />
+    <Compile Include="UnitConversions\Pressures\Pressure.cs" />
+    <Compile Include="UnitConversions\Speed\Speed.cs" />
+    <Compile Include="UnitConversions\Speed\SpeedImperial.cs" />
+    <Compile Include="UnitConversions\Speed\SpeedSI.cs" />
+    <Compile Include="UnitConversions\Temperature\Temperature.cs" />
+    <Compile Include="UnitConversions\Temperature\TemperatureSI.cs" />
+    <Compile Include="UnitConversions\Temperature\TemperatureImperial.cs" />
+    <Compile Include="UnitConversions\Temperature\TemperatureOther.cs" />
+    <Compile Include="UnitConversions\Time\Time.cs" />
+    <Compile Include="UnitConversions\Time\TimeMetric.cs" />
+    <Compile Include="UnitConversions\Time\TimeCommon.cs" />
+    <Compile Include="UnitConversions\Volume\Nations\VolumeCH.cs" />
+    <Compile Include="UnitConversions\Volume\Nations\VolumeFR.cs" />
+    <Compile Include="UnitConversions\Volume\Nations\VolumeTH.cs" />
+    <Compile Include="UnitConversions\Volume\VolumeAstronomical.cs" />
+    <Compile Include="UnitConversions\Volume\VolumeOther.cs" />
+    <Compile Include="UnitConversions\Volume\VolumeImperial.cs" />
+    <Compile Include="UnitConversions\Volume\Nations\VolumeJP.cs" />
+    <Compile Include="UnitConversions\Volume\VolumeMetric.cs" />
+    <Compile Include="UnitConversions\Volume\Volume.cs" />
+    <Compile Include="UnitConversions\Unit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnitConversions\Volume\Nations\VolumeUK.cs" />
+    <Compile Include="UnitConversions\Volume\Nations\VolumeUS.cs" />
+    <Compile Include="UnitConversions\Volume\VolumeSI.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
