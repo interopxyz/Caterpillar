@@ -14,11 +14,11 @@ namespace Caterpillar.Speeds
     }
 }
 
-namespace Caterpillar.Speeds.Imperial.PerSecond
+namespace Caterpillar.Speeds.Imperial
 {
-    public struct Imperial
+    public struct PerSecond
     {
-        public static readonly Imperial Empty;
+        public static readonly PerSecond Empty;
 
         public static Unit InchSecond { get { return new ImperialUnit("Inch per Second", "in/s", 0.0254); } }
         public static Unit FootSecond { get { return new ImperialUnit("Foot per Second", "ft/s", 0.3048); } }
@@ -28,11 +28,11 @@ namespace Caterpillar.Speeds.Imperial.PerSecond
     }
 }
 
-namespace Caterpillar.Speeds.Imperial.PerMinute
+namespace Caterpillar.Speeds.Imperial
 {
-    public struct Imperial
+    public struct PerMinute
     {
-        public static readonly Imperial Empty;
+        public static readonly PerMinute Empty;
 
         public static Unit InchMinute { get { return new ImperialUnit("Inch per Minute", "in/min", 0.00042333333333); } }
         public static Unit FootMinute { get { return new ImperialUnit("Inch per Minute", "ft/min", 0.00508); } }
@@ -42,11 +42,11 @@ namespace Caterpillar.Speeds.Imperial.PerMinute
     }
 }
 
-namespace Caterpillar.Speeds.Imperial.PerHour
+namespace Caterpillar.Speeds.Imperial
 {
-    public struct Imperial
+    public struct PerHour
     {
-        public static readonly Imperial Empty;
+        public static readonly PerHour Empty;
 
         public static Unit InchHour { get { return new ImperialUnit("Inch per Hour", "in/h", 0.0000070555555556); } }
         public static Unit FootHour { get { return new ImperialUnit("Foot per Hour", "ft/h", 0.000084666666667); } }

@@ -14,11 +14,11 @@ namespace Caterpillar.Speeds
     }
 }
 
-namespace Caterpillar.Speeds.SI.PerSecond
+namespace Caterpillar.Speeds.SI
 {
-    public struct SI
+    public struct PerSecond
     {
-        public static readonly SI Empty;
+        public static readonly PerSecond Empty;
 
         public static Unit MillimeterSecond { get { return new ImperialUnit("Mile per Hour", "mm/s", 0.001); } }
         public static Unit CentimeterSecond { get { return new SIUnit("Millimeter per Second", "cm/s", 0.01); } }
@@ -28,11 +28,11 @@ namespace Caterpillar.Speeds.SI.PerSecond
     }
 }
 
-namespace Caterpillar.Speeds.SI.PerMinute
+namespace Caterpillar.Speeds.SI
 {
-    public struct SI
+    public struct PerMinute
     {
-        public static readonly SI Empty;
+        public static readonly PerMinute Empty;
 
         public static Unit MillimeterMinute { get { return new SIUnit("Kilometer per Second", "mm/min", 0.00001666666667); } }
         public static Unit CentimeterMinute { get { return new SIUnit("Millimeter per Minute", "cm/min", 0.00016666666667); } }
@@ -42,11 +42,11 @@ namespace Caterpillar.Speeds.SI.PerMinute
     }
 }
 
-namespace Caterpillar.Speeds.SI.PerHour
+namespace Caterpillar.Speeds.SI
 {
-    public struct SI
+    public struct PerHour
     {
-        public static readonly SI Empty;
+        public static readonly PerHour Empty;
 
         public static Unit MillimeterHour { get { return new SIUnit("Kilometer per Minute", "mm/h", 0.0000002777777778); } }
         public static Unit CentimeterHour { get { return new SIUnit("Millimeter per Hour", "cm/h", 0.0000027777777778); } }
@@ -56,11 +56,11 @@ namespace Caterpillar.Speeds.SI.PerHour
     }
 }
 
-namespace Caterpillar.Speeds.SI.PerDay
+namespace Caterpillar.Speeds.SI
 {
-    public struct SI
+    public struct PerDay
     {
-        public static readonly SI Empty;
+        public static readonly PerDay Empty;
 
         public static Unit MillimeterDay { get { return new SIUnit("Kilometer per Hour", "mm/d", 0.00000001157407407); } }
         public static Unit CentimeterDay { get { return new SIUnit("Millimeter per Day", "cm/d", 0.0000001157407407); } }
