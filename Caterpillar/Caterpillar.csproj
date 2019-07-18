@@ -45,8 +45,10 @@
     <Compile Include="UnitConversions\Angle\AngleCommon.cs" />
     <Compile Include="UnitConversions\Angle\AngleTime.cs" />
     <Compile Include="UnitConversions\Areas\AreaAstronomical.cs" />
+    <Compile Include="UnitConversions\Areas\AreaCustom.cs" />
     <Compile Include="UnitConversions\Areas\AreaMetric.cs" />
     <Compile Include="UnitConversions\Areas\AreaNautical.cs" />
+    <Compile Include="UnitConversions\Areas\AreaTypographic.cs" />
     <Compile Include="UnitConversions\Areas\Nations\AreaCH.cs" />
     <Compile Include="UnitConversions\Areas\Nations\AreaDE.cs" />
     <Compile Include="UnitConversions\Areas\Nations\AreaES.cs" />
@@ -71,6 +73,8 @@
     <Compile Include="UnitConversions\Forces\Nations\ForceUK.cs" />
     <Compile Include="UnitConversions\Forces\Nations\ForceUS.cs" />
     <Compile Include="UnitConversions\Lengths\LengthAstronomical.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthCustom.cs" />
+    <Compile Include="UnitConversions\Lengths\LengthMetric.cs" />
     <Compile Include="UnitConversions\Lengths\Nations\LengthAT.cs" />
     <Compile Include="UnitConversions\Lengths\Nations\LengthCH.cs" />
     <Compile Include="UnitConversions\Lengths\Nations\LengthDE.cs" />
@@ -121,6 +125,8 @@
     <Compile Include="UnitConversions\Volumes\Nations\VolumeFR.cs" />
     <Compile Include="UnitConversions\Volumes\Nations\VolumeTH.cs" />
     <Compile Include="UnitConversions\Volumes\VolumeAstronomical.cs" />
+    <Compile Include="UnitConversions\Volumes\VolumeCustom.cs" />
+    <Compile Include="UnitConversions\Volumes\VolumeNautical.cs" />
     <Compile Include="UnitConversions\Volumes\VolumeOther.cs" />
     <Compile Include="UnitConversions\Volumes\VolumeImperial.cs" />
     <Compile Include="UnitConversions\Volumes\Nations\VolumeJP.cs" />
@@ -131,6 +137,7 @@
     <Compile Include="UnitConversions\Volumes\Nations\VolumeUK.cs" />
     <Compile Include="UnitConversions\Volumes\Nations\VolumeUS.cs" />
     <Compile Include="UnitConversions\Volumes\VolumeSI.cs" />
+    <Compile Include="UnitConversions\Volumes\VolumeTypographic.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

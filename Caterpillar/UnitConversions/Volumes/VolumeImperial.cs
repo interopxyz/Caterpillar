@@ -22,7 +22,9 @@ namespace Caterpillar.Volumes
     {
         public static readonly Imperial Empty;
 
+        public static Unit Microinch { get { return new ImperialUnit("Cubic Microinch", "--", 0.000000000000000000000016387064); } }
         public static Unit Thou { get { return new ImperialUnit("Cubic Thou", "--", 0.000000000000016387064); } }
+        public static Unit Mil { get { return new ImperialUnit("Cubic Mil", "--", 0.000000000000016387064); } }
         public static Unit Inch { get { return new ImperialUnit("Cubic Inch", "in", 0.000016387064); } }
         public static Unit Foot { get { return new ImperialUnit("Cubic Foot", "ft", 0.0283168); } }
         public static Unit Yard { get { return new ImperialUnit("Cubic Yard", "--", 0.764555); } }

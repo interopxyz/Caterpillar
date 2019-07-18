@@ -20,8 +20,10 @@ namespace Caterpillar.Areas
     {
         public static readonly Imperial Empty;
 
+        public static Unit Microinch { get { return new ImperialUnit("Square Microinch", "mi2", 0.00000000000000064516); } }
         public static Unit Thou { get { return new ImperialUnit("Square Thou", "th2", 0.00000000064516); } }
         public static Unit Inch { get { return new ImperialUnit("Square Inch", "in2", 0.00064516); } }
+        public static Unit Mil { get { return new ImperialUnit("Square Mil", "--2", 0.00000000064516); } }
         public static Unit Link { get { return new ImperialUnit("Square Link", "li2", 0.040468726); } }
         public static Unit Foot { get { return new ImperialUnit("Square Foot", "ft2", 0.09290304); } }
         public static Unit Yard { get { return new ImperialUnit("Square Yard", "yd2", 0.83612736); } }

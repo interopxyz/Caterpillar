@@ -20,8 +20,10 @@ namespace Caterpillar.Lengths
     {
         public static readonly Imperial Empty;
 
+        public static Unit Microinch { get { return new ImperialUnit("Microinch", "mi", 0.0000000254); } }
         public static Unit Thou { get { return new ImperialUnit("Thou", "th", 0.0000254); } }
         public static Unit Inch { get { return new ImperialUnit("Inch", "in", 0.0254); } }
+        public static Unit Mil { get { return new ImperialUnit("Mil", "--", 0.0000254); } }
         public static Unit Link { get { return new ImperialUnit("Link", "li", 0.20116840234); } }
         public static Unit Palm { get { return new ImperialUnit("Palm", "pa", 0.2286); } }
         public static Unit Foot { get { return new ImperialUnit("Foot", "ft", 0.3048); } }
